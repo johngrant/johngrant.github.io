@@ -1,1 +1,21 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Check the referring domain
+            const referrer = document.referrer;
+            if (referrer.includes("stocktonstreet.com")) {
+                window.location.href = "https://johngrant.github.io/stockton-street-dot-com/";
+            }
+        });
+    </script>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <p>If you were referred from <strong>stocktonstreet.com</strong>, you should be redirected.</p>
+</body>
+</html>
